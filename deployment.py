@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-from sklearn.ensemble import RandomForestClassifier
+
 
 st.write("""
 # companys status Prediction App
@@ -53,7 +53,7 @@ import warnings
 import joblib
 with warnings.catch_warnings():
       warnings.simplefilter("ignore", category=UserWarning)
-      estimator = joblib.load(open('statusModel.sav', 'rb'))
+      estimator = joblib.load(open('statusModel1.sav', 'rb'))
 
 # Apply model to make predictions
 prediction = estimator.predict(df)
