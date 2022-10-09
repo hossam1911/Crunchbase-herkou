@@ -12,8 +12,7 @@ Data obtained from the crunchbase realtime dataset of companys
 
 st.sidebar.header('User Input Features')
 
-st.sidebar.markdown("""
-[)
+st.sidebar.markdown("""Enter the values you want predict)
 """)
 
 # Collects user input features into dataframe
@@ -54,7 +53,7 @@ import warnings
 import joblib
 with warnings.catch_warnings():
       warnings.simplefilter("ignore", category=UserWarning)
-      estimator = joblib.load(open(r'statusModel.sav', 'rb'))
+      estimator = joblib.load(open('statusModel.sav', 'rb'))
 
 # Apply model to make predictions
 prediction = estimator.predict(df)
