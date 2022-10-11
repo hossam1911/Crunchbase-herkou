@@ -53,7 +53,7 @@ import warnings
 import joblib
 with warnings.catch_warnings():
       warnings.simplefilter("ignore", category=UserWarning)
-      estimator = joblib.load(open(r'\statusModel1.sav', 'rb'))
+      estimator = joblib.load(open('statusModel1.pkl', 'rb'))
 
 # Apply model to make predictions
 prediction = estimator.predict(df)
