@@ -37,7 +37,7 @@ def user_input_features():
             'funding_total_usd': funding_total_usd,
             'first_milestone_at': first_milestone_at,
             'relationships':no_of_relationships,
-            'active_days':active_days
+            'active_days':active_days,
             'lng':lng,
             'lat':lat
             }
