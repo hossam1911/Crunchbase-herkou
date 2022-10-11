@@ -57,7 +57,7 @@ import warnings
 import joblib
 with warnings.catch_warnings():
       warnings.simplefilter("ignore", category=UserWarning)
-      estimator = joblib.load(open('Last_Model.pkl', 'rb'))
+      estimator = joblib.load(open('LastModel.pkl', 'rb'))
 
 # Apply model to make predictions
 prediction = estimator.predict(df)
