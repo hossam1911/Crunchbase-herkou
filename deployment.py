@@ -28,7 +28,7 @@ def user_input_features():
     no_of_relationships = st.sidebar.slider('relationships', 1.0,2000.0,10.0)
     funding_rounds = st.sidebar.slider('funding_rounds', 0.0,5.0,1.0)
     active_days =st.sidebar.slider('active_days', 1000.0,5000.0,10.0)
-     lat = st.slider('lat',-50.0,80.0,10.0)
+    lat = st.slider('lat',-50.0,80.0,10.0)
     lng = st.slider('lng',-160.0,180.0,10.0)
     data = {'founded_at': founded_at,
             'first_funding_at': first_funding_at,
